@@ -1,7 +1,219 @@
-<a href="https://github.com/Optima-DTS/RGMS-Virtual-Tour/releases/download/v1.0.0/RGMS-Tour-Android.apk">
-  Download Android APK
-</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RGMS Virtual Tour Downloads</title>
 
-<a href="https://github.com/Optima-DTS/RGMS-Virtual-Tour/releases/download/v1.0.0/RGMS-Tour-Windows.zip">
-  Download Windows ZIP
-</a>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #172033;
+      --card-border: #2b3954;
+      --text: #f8fafc;
+      --muted: #b6c2d1;
+      --accent: #528bff;
+      --accent-hover: #3f78ea;
+      --button-secondary: #2c374d;
+      --button-secondary-hover: #3a465e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(82, 139, 255, 0.22), transparent 34rem),
+        linear-gradient(180deg, #0b1020 0%, var(--bg) 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 18px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+    }
+
+    .card {
+      background: rgba(23, 32, 51, 0.94);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 34px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.05;
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--muted);
+      margin: 0 0 24px;
+    }
+
+    .info {
+      display: grid;
+      gap: 10px;
+      margin: 24px 0;
+      padding: 18px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .label {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .downloads {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .download-button {
+      display: block;
+      text-align: center;
+      padding: 15px 18px;
+      border-radius: 10px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      background: var(--accent);
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+
+    .download-button:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .download-button.secondary {
+      background: var(--button-secondary);
+    }
+
+    .download-button.secondary:hover {
+      background: var(--button-secondary-hover);
+    }
+
+    .note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    footer {
+      margin-top: 16px;
+      text-align: center;
+      color: #7f8da3;
+      font-size: 12px;
+    }
+
+    @media (max-width: 620px) {
+      .card {
+        padding: 24px;
+      }
+
+      .downloads {
+        grid-template-columns: 1fr;
+      }
+
+      .info-row {
+        grid-template-columns: 1fr;
+        gap: 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="eyebrow">Program Scenario Project</div>
+
+      <h1>RGMS Virtual Tour</h1>
+
+      <p class="subtitle">
+        A 3D Virtual Tour and Wayfinder for Ryan Gloyer Middle School.
+      </p>
+
+      <div class="info">
+        <div class="info-row">
+          <div class="label">Purpose</div>
+          <div>School navigation and virtual wayfinding project</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">School</div>
+          <div>Ryan Gloyer Middle School</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Author</div>
+          <div>Charlie Barbosa</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Downloads</div>
+          <div>Windows and Android</div>
+        </div>
+      </div>
+
+      <div class="downloads">
+        <a
+          class="download-button"
+          href="https://github.com/Optima-DTS/RGMS-Virtual-Tour/releases/latest"
+        >
+          Download for Android
+        </a>
+
+        <a
+          class="download-button secondary"
+          href="https://github.com/Optima-DTS/RGMS-Virtual-Tour/releases/latest"
+        >
+          Download for Windows
+        </a>
+      </div>
+
+      <p class="note">
+        Select the download that matches your device. Android users may need to allow installation from unknown apps.
+      </p>
+    </section>
+
+    <footer>
+      RGMS Virtual Tour &mdash; Program Scenario Project
+    </footer>
+  </main>
+</body>
+</html>
